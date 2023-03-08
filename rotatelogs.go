@@ -189,7 +189,7 @@ func (rl *RotateLogs) getWriterNolock(bailOnRotateFail, useGenerationalNames boo
 
 			return nil, err
 		}
-		fmt.Fprintf(os.Stderr, "%s\n", err.Error())
+// 		fmt.Fprintf(os.Stderr, "%s\n", err.Error())
 	}
 
 	rl.outFh.Close()
